@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngIvy';
+  hasThings1 = false;
+  hasThings2 = true;
+
+  updateView($event: Event) {
+    this.hasThings1 = true;
+  }
 }
